@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 nov. 2014, 17:58:31
+    Author     : NicolasG
+*/
+
+@charset "utf-8";
+
+table.jqplot-table-legend{
+  background-color: rgba(255,255,255,0.6);
+    border: 1px solid #ccc;
+    position: absolute;
+    font-size: .75em;
+}
+
+div.jqplot-table-legend-swatch{
+    width: 10px;
+    height: 10px;
+}

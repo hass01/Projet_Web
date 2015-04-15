@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+
+/*======================*/
+/*======= LAYOUT =======*/
+/*======================*/
+
+body {
+    background-image: url("../app/webroot/img/background.png");
+    background-repeat: repeat;
+}
+
+#content h1 {
+    margin-top: -10px;
+    color: #4768b4;
+    font-weight: bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+
+#container {
+    margin: auto;
+    left:0;
+}
+
+#header{
+    margin:auto;
+    margin-top: -11px;
+    width: 900px;
+    background-color: #4768b4;
+    top:0;
+    left:0;
+    right:0;
+    color: #93959e;
+    height: 44px;        
+    font-size: 8px;        
+    font-weight: bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px #4768b4;
+    border-bottom: 5px solid #f8f8f8;
+}
+#header h1 {
+    line-height:44px;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    background-color: #4768b4;
+    color: #fff;
+}
+#header h2 {
+    line-height:30px;
+    background-color: #1d2b4a;
+    color: #fff;
+    margin-left: 150px;
+    margin-top: -47px;
+    height: 30px;
+    padding: 0 30px;
+}
+#header ul, #header li {
+    display: block;
+    list-style: none;
+}
+
+#content{
+    clear: both;
+    margin: auto;
+    width: 904px;
+    left:0;
+}
+#content td{
+    vertical-align: top;
+}
+
+.cadre {
+    background-color: #000;
+    opacity: 0.7;
+    width: 150px;
+    padding: 0px;
+    color: #fff;
+    height: 44px;        
+    font-size: 15px;        
+    font-weight: bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px #4768b4;
+    position: relative;
+}
+.cadre li {
+    list-style: none;
+    display: block;
+}
+.cadre ul {    
+    margin-left:0;
+    padding-left:0;
+}
+.cadre a {
+    color: #93959e;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+.cadre a:hover {
+    color: #4768b4;
+    font-style: italic;
+}
+.cadre a:active {
+    color: #4768b4;
+}
+
+.cadre2 {
+    background-color: #000;
+    width: 150px;
+    padding: 0px;
+    opacity: 0.7;
+    z-index: -2;
+    color: #fff;
+    height: 44px;        
+    font-size: 15px;        
+    font-weight: bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px #4768b4;
+    position: relative;
+}
+
+#contenu {
+    background-color: #f8f8f8;
+    opacity: 0.8;
+    padding: 10px 20px;
+    width: 564px;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+}
+#contenu table{
+    z-index: 5;
+}
+#contenu p {
+    font-size: 13px;
+    text-align: justify;
+}
+#contenu h1 {
+    margin-top: -10px;
+    color: #4768b4;
+    font-weight: bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#contenu h2 {
+    color: #93959e;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: -2px;
+    text-align: center;
+}
+
+#footer {
+    clear: both;    
+    margin:auto;
+    width: 880px;
+    background-color: #f8f8f8;
+    text-align: center;
+    color: #93959e;  
+    font-size: 10px;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    box-shadow: 0 0 5px;
+    padding: 10px;
+}
+#footer p{
+    padding: 0;
+    margin: 0;
+}
+#flashMessage{
+    background-color: #1d2b4a;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: -10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+
+/*============================*/
+/*======= Carte de Jeu =======*/
+/*============================*/
+#map {
+    margin: 10px;
+    border-spacing : 0px;
+    border-collapse : collapse;
+}
+#map tr, #map td {
+    padding: 0px; 
+    border: 0px;
+    border-spacing : 0px;
+    border-collapse : collapse;
+    margin: 0px;
+}
+#map td{
+    line-height:10px;
+}
+#map img{
+    padding: 0px;
+    margin: 0px;
+}
+#map tbody{
+    border: 5px solid black;
+}
+#attaque{
+    margin : 10px;
+}
+.tooltips{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+/*=============================*/
+/*======= Slider Avatar =======*/
+/*=============================*/
+.avatars {
+    height: 96px;
+    width: 160px;
+    background-color: #4768b4;
+    border: 1px solid #1d2b4a;
+    box-shadow: 0px 0px 5px #000;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.avatars a{
+    display: block;
+    float: left;
+    padding: 0px;
+}
+.avatars a img{
+    margin: 0 32px;
+}
+
+.next_s {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 96px;
+    width: 32px;
+    background-image: url("../app/webroot/img/right.png");
+}
+.next_s:hover{
+    opacity: 0.8;
+}
+.previous_s {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 96px;
+    width: 32px;
+    background-image: url("../app/webroot/img/left.png");
+}
+.previous_s:hover{
+    opacity: 0.8;
+}
+.slider{
+    width: 1280px;
+    height: 96px;
+    position: relative;
+}
+
+/*======================*/
+/*======= AUTRES =======*/
+/*======================*/
+.infos{
+    width: 160px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+#FighterCreatefighterForm{
+    margin: auto;
+    margin-top: 25px;
+    text-align: justify;
+    width: 220px;
+}
+#FighterAvatar{
+    display: none;
+}
+.submit{
+    text-align: center;
+}
+
+
+#big{
+    padding: 10px 20px;
+        width: 564px;    
+}
+#small{
+    width: 150px;    
+    opacity: 0.7;
+}
+#small h2{    
+    color: #4768b4;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: -2px;
+    margin-left: -40px;
+}
+#small img{
+    margin-left: 5px;
+    margin-top: 8px;
+}
+#small h3{
+    color: #93959e;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+#small h4{
+    color: #93959e;
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+#small h5{
+    color: #f8f8f8;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+#small a{
+    color: #93959e;
+    text-decoration: none;    
+    font-weight: bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    margin: 0;
+}
+#small a:hover {
+    color: #4768b4;
+    font-style: italic;
+}
+#small a:active {
+    color: #4768b4;
+}
+#equip{
+    width: 120px;
+    margin-top: -50px;
+}
+
+#special{
+    margin-right: -190px;
+}
+#special h1 {
+    margin-top: -10px;
+    color: #4768b4;
+    font-weight: bold;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: -40px;
+}
+
+#diary_wrapper{
+    font-size:10px;    
+}
+
+#personnage{
+    font-size: 13px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#personnage submit{
+    text-align: center;
+    margin: auto;
+}
+#personnage img{
+    margin: auto;
+    width: 96px;
+}
+#personnage h3{
+    color: #93959e;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+#personnage h4{
+    color: #93959e;
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#personnage h4{
+    color: #93959e;
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#personnage p{
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+

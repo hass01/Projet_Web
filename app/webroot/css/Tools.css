@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 nov. 2014, 16:29:03
+    Author     : NicolasG
+*/
+
+.tooltip{ 
+    color:#ccc;
+    text-shadow:0 -1px 0 black; 
+    font-size: 13px;
+}
+.tooltip img{
+    z-index:1;
+}
+
+.tooltip:hover,.tooltip:focus{ 
+    box-shadow:0 1px 0 rgba(255,255,255,.4); 
+}
+.tooltip span,.toll{
+    position:absolute;
+    margin-top:23px;
+    margin-left:-35px;
+    color:#09c;
+    background:rgba(0,0,0,.9);
+    padding:15px;
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    transform:scale(0) rotate(-12deg);
+    transition:all .25s;
+    opacity:0;
+    width:250px;
+    z-index:200;
+}
+
+.tooltip:hover span, .tooltip:focus span,.toll:hover,.toll:focus{
+    transform:scale(1) rotate(0);
+    opacity:1;
+}
+#Gant,#Plastron,#Arme,#Casque,#Botte{
+    position:relative;
+}
+#Gant{
+    top: -190px;
+    left: 80px;
+}
+#Plastron{    
+    top: -210px;
+    left: -65px;
+}
+#Arme{
+    top: -163px;
+}
+#Botte{
+    top: -60px;
+    left: -30px;
+}
+#Casque{
+    top: -265px;
+    left: 5px;
+}
